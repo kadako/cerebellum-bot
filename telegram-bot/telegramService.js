@@ -13,6 +13,7 @@ async function sendToTelegram(data) {
 🔺 *Name:* ${data.tokenName}
 📝 *CA:* ${data.tokenAddress}
 🧑‍💻 *Dev:* ${data.creatorAddress}
+⌛ *Wallet Age:* ${data.age} Ago
 💰 *Balance:* ${data.deployerBalance} AVAX
 - *Powder:* ${data.isPowder}
 - *Curve:* ${data.curveIndex}
