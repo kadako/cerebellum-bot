@@ -1,5 +1,6 @@
 // Importing ethers library from Ethers.js
 require('dotenv').config();
+
 const axios = require('axios');
 const { ethers } = require('ethers');
 const { sendToTelegram } = require('./telegram-bot/telegramService.js');
@@ -100,15 +101,16 @@ async function getData(token, creator, isPowder, curveIndex, provider) {
   const tokenName = await getTokenName(token, provider); // Ensure provider is passed
   const balance = await getBalance(creator, provider); // Ensure provider is passed
   const countDays = await getFirstTransactionDate(creator);
-  console.log("==================+=================");
-  console.log("Token Name:", tokenName);
-  console.log("Token Address:", token);
-  console.log("Creator Address:", creator);
-  console.log("Account Age:", countDays);
-  console.log("Deployer Balance:", balance, "AVAX");
-  console.log("Is Powder:", isPowder);
-  console.log("Curve Index:", curveIndex.toString());
-  console.log("==================+=================");
+  console.log("New token Deployed on Bellum!:");
+  // console.log("==================+=================");
+  // console.log("Token Name:", tokenName);
+  // console.log("Token Address:", token);
+  // console.log("Creator Address:", creator);
+  // console.log("Account Age:", countDays);
+  // console.log("Deployer Balance:", balance, "AVAX");
+  // console.log("Is Powder:", isPowder);
+  // console.log("Curve Index:", curveIndex.toString());
+  // console.log("==================+=================");
 
   // Create a JSON object to hold the data
   const dataToken = {
